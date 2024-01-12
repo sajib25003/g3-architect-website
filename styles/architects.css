@@ -26,7 +26,11 @@ body {
     border: none;
     margin: 2% 5%;
     cursor: pointer;
-    
+
+}
+
+main {
+    margin: 3% 10% 0 10%;
 }
 
 /* heading section related styles */
@@ -81,13 +85,50 @@ header h2 {
     margin-bottom: 3%;
 }
 
-header p{
+header p {
     padding: 1% 8%;
 }
 
+/* feature section related styles */
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 5% 5%;
+    padding: 0;
+}
 
+.feature-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+    width: 100%;
+}
 
+.feature-description {
+    margin: 0 5% 0 7.5%;
+    text-align: left;
+}
 
+.feature-description button {
+    margin: 3% 0;
+}
+
+.feature-title {
+    color: black;
+    font-size: 45px;
+    font-weight: 500;
+}
+.title-start{
+    color:#727272;
+}
+.title-end{
+    color: #FF900E;
+}
+.feature-image{
+    width: 100%;
+    border-radius: 8px;
+}
 
 /* Responsive Layout */
 
@@ -97,17 +138,22 @@ header p{
         flex-direction: column;
         padding: 0;
     }
-    header ul, header li{
+
+    header ul,
+    header li {
         padding: 0;
     }
-    header ul{
+
+    header ul {
         justify-content: center;
         align-items: center;
     }
-    header li{
+
+    header li {
         margin: 2% 5%;
     }
-    header h3{
+
+    header h3 {
         font-size: 1.5rem;
     }
 }
@@ -119,14 +165,18 @@ header p{
         flex-direction: column;
         padding: 0;
     }
-    header ul, header li{
+
+    header ul,
+    header li {
         padding: 0;
     }
-    header ul{
+
+    header ul {
         justify-content: center;
         align-items: center;
     }
-    header li{
+
+    header li {
         margin: 2% 5%;
     }
 }
