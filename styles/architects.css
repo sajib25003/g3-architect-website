@@ -1,1 +1,132 @@
 /* font-family: 'Work Sans', sans-serif; */
+
+/* common shared styles */
+body {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+.section-text {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    margin: 2% 5%;
+    cursor: pointer;
+    
+}
+
+/* heading section related styles */
+header {
+    background-color: #FF900E1A;
+    margin: 0;
+    padding: 2% 10%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 0 0;
+
+}
+
+header ul {
+    display: flex;
+    margin: 0;
+}
+
+header li {
+    list-style: none;
+    padding-right: 20%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header li a {
+    text-decoration: none;
+    color: #424242;
+
+}
+
+header img {
+    width: 100%;
+}
+
+header h3 {
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+header h2 {
+    color: black;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 3%;
+}
+
+header p{
+    padding: 1% 8%;
+}
+
+
+
+
+
+/* Responsive Layout */
+
+/* small device */
+@media screen and (max-width:576px) {
+    header nav {
+        flex-direction: column;
+        padding: 0;
+    }
+    header ul, header li{
+        padding: 0;
+    }
+    header ul{
+        justify-content: center;
+        align-items: center;
+    }
+    header li{
+        margin: 2% 5%;
+    }
+    header h3{
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Medium Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    header nav {
+        flex-direction: column;
+        padding: 0;
+    }
+    header ul, header li{
+        padding: 0;
+    }
+    header ul{
+        justify-content: center;
+        align-items: center;
+    }
+    header li{
+        margin: 2% 5%;
+    }
+}
